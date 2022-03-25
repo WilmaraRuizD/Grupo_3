@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+<!-- 
+    <div class="grid-container">
+        <div id="div1"><img src="image1.png"  onclick="mostrar()"  alt="">
+        </div>
+        <div class="celdas"  id="1" ><img src="image1.png"  onclick="mostrar()"  alt=""> </div>
+        <div class="celdas"  id="2" ><img src="image1.png"  onclick="mostrar()"  alt=""></div>
+        <div class="celdas"  id="3"><img src="image1.png"  onclick="mostrar()"  alt=""></div>
+        <div class="celdas"  id="4"><img src="image1.png"  onclick="mostrar()"  alt=""></div>
+        <div class="celdas"  id="5"><img src="image1.png"  onclick="mostrar()"  alt=""></div>
+        <div class="celdas"  id="6"><img src="image1.png"  onclick="mostrar()"  alt=""></div>
+        <div class="celdas"  id="7"><img src="image1.png"  onclick="mostrar()"  alt=""></div>
+        <div class="celdas"  id="8"><img src="image1.png"  onclick="mostrar()"  alt=""></div>
+        <div class="celdas"  id="9"><img src="image1.png"  onclick="mostrar()"  alt=""></div>
+        <div class="celdas"  id="10"><img src="image1.png"  onclick="mostrar()"  alt=""></div>
+        <div class="celdas"  id="11"><img src="image1.png"  onclick="mostrar()"  alt=""></div>
+        <div class="celdas"  id="12"><img src="image1.png"  onclick="mostrar()"  alt=""></div>
+
+
+    </div> -->
+    <button onclick="init()" >Inicio</button>
+
+    <div class="celdas"  id="10"><img src="image1.png"  onclick="mostrar()"  alt=""></div>
+    <div class="celdas"  id="11"><img src="image1.png"  onclick="mostrar()"  alt=""></div>
+    <div class="celdas"  id="12"><img src="image1.png"  onclick="mostrar()"  alt=""></div>
+
+    <script src="scrip.js"></script>
+</body>
+</html>
+
+--------------------------js:
+
+
+//inicializar 
+
+
+function init(){
+var $rlt = [1, 0, 0];
+document.getElementById("10").innerHTML  = $rlt[0];
+document.getElementById("11").innerHTML  = $rlt[1];
+document.getElementById("12").innerHTML  = $rlt[2];
+}
+
+
+function mostrar() {
+     div = document.getElementById('jugar');
+  alert("Se cumplio la funcion");
+var $rlt = [1, 0, 1];
+document.getElementById("10").innerHTML  = $rlt[0];
+document.getElementById("11").innerHTML  = $rlt[1];
+document.getElementById("12").innerHTML  = $rlt[2];
+
+
+
+}
