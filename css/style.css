@@ -25,50 +25,87 @@ nav img{
     margin-top: auto;
     margin-bottom: auto;
 }
-input{
-    margin-right: 5%;
-    margin-left: 0.5%;
-    font-size: 15px;
-    background-color: transparent;
-    border: 3px solid black;
+
+h1{
+  text-align: center;
+  margin: 2rem;
+  color: aquamarine;
+}
+
+main{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1000px;
+  margin: auto;
+}
+
+figure,
+ figure img {
+    display: inline-block;
+    width: 100%;
+}
+
+figure {
+  position: relative;
+  transition: all ease .5s;
+  transform-style: preserve-3d;
+  transform:  perspective(600px)rotateY(0deg);
+  cursor: pointer;
+  box-shadow: 3px 3px 16 rgb(0,0,0,0.6);
+}
+
+figure::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0);
+  transition: 0.3s all ease;
+}
+
+figure:hover:after {
+  background: rgba(255, 255, 255, 0.137);
+}
+figure:opened {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+
+figure .back {
+  display: block;
+  backface-visibility: hidden;
+}
+
+figure .searched-image {
+  position: absolute;
+  top: 0;
+  transform: perspective(600px) rotateY(180deg);
+  backface-visibility: hidden;
+  height: 1000%;
+  overflow: hidden;
+}
+
+
+
+
+/* 
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+  background-image:url(../img/92911965-fondo-de-invierno-increíble-luna-creciente-en-cielo-estrellado-noche-azul-oscuro-sobre-el-campo-cubi.webp);
+  padding: 10px;
 }
 
 .grid-container > div {
-  background-color: white(248, 10, 10, 0.8);
+background-image:url(../img/image1.png);
+  border: 1px solid ;
   text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 10px;
-  background-color: #2196f3;
-  padding: 10px;
-}
-#container{
-    margin: auto;
-    text-align: center;
-    background-color: Blue;
-    border: 10px solid green;
-    width: 50%;
-    border-radius: 20px;
-    padding: 25px
-}
-img {
-    width: 30%;
-    display: flex;
-    margin: auto;
-}
-button{
-    padding:20px;
-    background-color:aqua;
-    border:none;
-    border-radius:30px;
-}
-a {
-    float:left;
-}
-main{
-    margin: 0% 5%
-}
+  height: 400px;
+  width: 100%;
+  
+} */
