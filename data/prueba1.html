@@ -10,90 +10,104 @@
     <title>Document</title>
 </head>
 
-<body>
+<body >
     <nav>
+       
+        <div>
         <img src="../img/logo.png" alt="Logo">
         <label class="menu">Puntuación:</label>
         <input type="number" id="puntos"  class="menu" disabled>
-        <label class="menu">Vidas:</label>
-        <input type="number" id="vidas" required class="menu" disabled>
+    </div>
+    <div class="grid-container">
+        <div class="vida">Vidas:</div>
+        <div class="contenedor">
+            <div class="heart" id="vida1"></div>
+        </div>
+        <div class="contenedor1">
+            <div class="heart"  id="vida2"></div>
+        </div>
+        <div class="contenedor2">
+            <div class="heart" id="vida3"></div>
+        </div>
+    </div>
+
     </nav>
-
+  
+    
     <h1>¿Listo para jugar ?</h1>
-
+    <div id="temporizar"></div>
+    <button id="boton">Presióname</button>
     <main class="board-game">
-<figure>
+<figure >
     <img class="back" src="../img/image1.png" alt="">
-    <div class="searched-image">
-        <img src="https://rickandmortyapi.com/api/character/avatar/2.jpeg" alt="">
+    <div id ="div1"class="searched-image">
+        
     </div>
 </figure>
-<figure>
+<figure >
     <img src="../img/image1.png" alt="">
-    <div class="searched-image">
-        <img class="back" src="https://rickandmortyapi.com/api/character/avatar/2.jpeg" alt="">
+    <div id="div2" class="searched-image">
+        
     </div>
 </figure>
 <figure>
     <img  class="back" src="../img/image1.png" alt="">
-    <div class="searched-image">
-        <img src="https://rickandmortyapi.com/api/character/avatar/2.jpeg" alt="">
+    <div id="div3" class="searched-image">
+        
     </div>
 </figure>
 <figure>
-    <img class="back" src="../img/image1.png" alt="">
-    <div class="searched-image">
-        <img src="https://rickandmortyapi.com/api/character/avatar/2.jpeg" alt="">
+    <img src="../img/image1.png" alt="">
+    <div id="div4" class="searched-image">
+       
     </div>
 </figure>
 <figure>
-    <img class="back" src="../img/image1.png" alt="">
-    <div class="searched-image">
-        <img src="https://rickandmortyapi.com/api/character/avatar/2.jpeg" alt="">
+    <img src="../img/image1.png" alt="">
+    <div id="div5" class="searched-image">
+
     </div>
 </figure>
 <figure>
-    <img class="back" src="../img/image1.png" alt="">
-    <div class="searched-image">
-        <img src="https://rickandmortyapi.com/api/character/avatar/2.jpeg" alt="">
+    <img src="../img/image1.png" alt="">
+    <div id="div6" class="searched-image">
+      
     </div>
 </figure><figure>
-    <img class="back" src="../img/image1.png" alt="">
-    <div class="searched-image">
-        <img src="https://rickandmortyapi.com/api/character/avatar/2.jpeg" alt="">
+    <img src="../img/image1.png" alt="">
+    <div id="div7" class="searched-image">
+       
     </div>
 </figure>
 <figure>
-    <img class="back" src="../img/image1.png" alt="">
-    <div class="searched-image">
-        <img src="https://rickandmortyapi.com/api/character/avatar/2.jpeg" alt="">
+    <img src="../img/image1.png" alt="">
+    <div id="div8" class="searched-image">
+       
     </div>
 </figure>
 <figure>
-    <img class="back" src="../img/image1.png" alt="">
-    <div class="searched-image">
-        <img src="https://rickandmortyapi.com/api/character/avatar/2.jpeg" alt="">
+    <img src="../img/image1.png" alt="">
+    <div id="div9"class="searched-image">
+        
     </div>
 </figure>
 <figure>
-    <img class="back" src="../img/image1.png" alt="">
-    <div class="searched-image">
-        <img src="https://rickandmortyapi.com/api/character/avatar/2.jpeg" alt="">
+    <img src="../img/image1.png" alt="">
+    <div id="div10"class="searched-image">
+        
     </div>
 </figure>
 <figure>
-    <img class="back" src="../img/image1.png" alt="">
-    <div class="searched-image">
-        <img src="https://rickandmortyapi.com/api/character/avatar/2.jpeg" alt="">
+    <img src="../img/image1.png" alt="">
+    <div id="div11" class="searched-image">
     </div>
 </figure>
 <figure>
-    <img class="back" src="../img/image1.png" alt="">
-    <div class="searched-image">
-        <img src="https://rickandmortyapi.com/api/character/avatar/2.jpeg" alt="">
+    <img src="../img/image1.png" alt="">
+    <div id="div12" class="searched-image">
+        
     </div>
 </figure>
-   
     
 </main>
     <script src="script.js" type="module"></script>

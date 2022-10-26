@@ -6,11 +6,12 @@ body{
     margin: 2%;
 }
 nav{
+  padding: 40px 50px 0px ;
     width: 100%;
     height: auto;
     display: flex;
     font-size: 20px;
-    margin-bottom: 5%;
+    /*margin-bottom: 5%;*/
 
 }
 nav img{
@@ -28,7 +29,6 @@ nav img{
 
 h1{
   text-align: center;
-  margin: 2rem;
   color: aquamarine;
 }
 
@@ -70,12 +70,12 @@ figure::after {
 figure:hover:after {
   background: rgba(255, 255, 255, 0.137);
 }
-figure:opened {
+figure:hover {
   transform: perspective(600px) rotateY(180deg);
 }
 
 
-figure .back {
+figure.back {
   display: block;
   backface-visibility: hidden;
 }
@@ -89,23 +89,85 @@ figure .searched-image {
   overflow: hidden;
 }
 
-
-
-
-/* 
+nav div{
+  height: 60px;
+}
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  gap: 20px;
-  background-image:url(../img/92911965-fondo-de-invierno-increíble-luna-creciente-en-cielo-estrellado-noche-azul-oscuro-sobre-el-campo-cubi.webp);
-  padding: 10px;
+  grid-gap: 30px;
+  padding: 10px }
+
+  
+.contenedor {
+   font-size: 1.2em;
+   font-size: 1.2em;
+   display: grid;
+   min-height: 30vh;
+   justify-content: center;
+   padding: 0 10px;
+  /*align-content: center;*/
+ }
+ .contenedor1 {
+   font-size: 1.2em;
+   font-size: 1.2em;
+   display: grid;
+   min-height: 30vh;
+   justify-content: center;
+  /*align-content: center;*/
+ }
+ .contenedor2 {
+   font-size: 1.2em;
+   font-size: 1.2em;
+   display: grid;
+   min-height: 30vh;
+   justify-content: center;
+  /*align-content: center;*/
+ }
+.heart{
+  display: inline;
+  --size: 20px;
+  --color: red;
+  transform:rotate(45deg);
+  animation:beat 1s infinite alternate ease-in-out;
+}
+@keyframes beat{
+  to{
+    transform: rotate(45deg) scale(1.05);
+  }
 }
 
-.grid-container > div {
-background-image:url(../img/image1.png);
-  border: 1px solid ;
-  text-align: center;
-  height: 400px;
-  width: 100%;
-  
-} */
+.heart,
+.heart::before,
+.heart::after{
+    width: var(--size);
+    height: var(--size);
+    background:var(--color);
+}
+.heart::before,
+.heart::after{
+  content:'';
+  display: block;
+  border-radius:50%;
+}
+.heart::before{
+  margin-top: calc(var(--size)*-.5);
+ 
+}
+.heart::after{
+  margin-top: calc(var(--size)* -0.5);
+  margin-left: calc(var(--size)* -0.5);
+}
+
+#temporizar{
+  margin: 4px;
+  width: 100px;
+  padding: 5px;
+  height: 20px;
+  font-size: 15px;
+  background:#09571C;
+  margin-left: 40px;
+  color:aquamarine ;
+  border-radius: 5px;
+  justify-content: center;
+}
